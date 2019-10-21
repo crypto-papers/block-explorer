@@ -8,6 +8,9 @@
     "build": "webpack --config ./config/webpack.config.js --mode production",
     "dev": "webpack-dev-server --config ./config/webpack.config.js --mode development"
   },
+  "browserslist": [
+    "last 1 Chrome version"
+  ],
   "dependencies": {
     "@reach/router": "^1.2.1",
     "react": "^16.10.2",
@@ -16,10 +19,12 @@
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-react": "^7.6.3",
-    "@cryptopapers/eslint-config": "0.0.1",
+    "@cryptopapers/eslint-config": "^0.1.0",
     "@cryptopapers/prettier-config": "^1.0.0",
+    "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.0",
     "eslint": "^6.5.1",
