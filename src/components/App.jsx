@@ -1,20 +1,19 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Router } from '@reach/router';
 
 import Block from './Block';
-import Header from './Header';
+import Layout from './Layout';
 import Home from './Home';
 
 import '../style/app.scss';
 
 const App = () => (
-  <Fragment>
-    <Header />
+  <Layout>
     <Router>
       <Home path="/" />
       <Block path="/block/" />
     </Router>
-  </Fragment>
+  </Layout>
 );
 
 App.displayName = 'App';
