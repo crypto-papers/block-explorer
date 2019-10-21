@@ -1,6 +1,7 @@
 import React from 'react';
 import { Router } from '@reach/router';
 
+import Address from './Address';
 import Block from './Block';
 import Layout from './Layout';
 import Home from './Home';
@@ -12,6 +13,7 @@ const App = () => (
     <Router>
       <Home path="/" />
       <Block path="/block/" />
+      <Address path="/address/" />
     </Router>
   </Layout>
 );
