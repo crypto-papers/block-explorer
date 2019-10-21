@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from '@reach/router';
 
-import '../style/header.scss';
+import './header.scss';
 
 const Header = () => (
   <header>

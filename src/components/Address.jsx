@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Web3 from 'web3';
 
-import AccountBalances from './AccountBalances';
+import AccountBalances from './AccountBalances/AccountBalances';
 import { RethToken, RplToken } from '../utils/addresses';
 
 const Address = () => {

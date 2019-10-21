@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 import { node } from 'prop-types';
 
-import Header from './Header';
+import Header from '../Header/Header';
 
-import '../style/layout.scss';
+import './layout.scss';
 
 const Layout = ({ children }) => (
   <Fragment>

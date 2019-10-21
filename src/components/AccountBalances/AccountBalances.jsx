@@ -1,9 +1,9 @@
 import React from 'react';
 import { string } from 'prop-types';
 
-import { weiToEth } from '../utils/conversions';
+import { weiToEth } from '../../utils/conversions';
 
-import '../style/accountBalances.scss';
+import './accountBalances.scss';
 
 const AccountBalances = ({ eth, reth, rpl }) => (
   <div className="balances">

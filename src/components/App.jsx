@@ -3,7 +3,7 @@ import { Router } from '@reach/router';
 
 import Address from './Address';
 import Block from './Block';
-import Layout from './Layout';
+import Layout from './Layout/Layout';
 import Home from './Home';
 
 import '../style/app.scss';
