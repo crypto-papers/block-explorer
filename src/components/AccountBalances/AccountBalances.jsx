@@ -1,16 +1,14 @@
 import React from 'react';
 import { string } from 'prop-types';
 
-import { weiToEth } from '../../utils/conversions';
-
-import './accountBalances.scss';
+import fromWei from '../../utils/conversions';
 
 const AccountBalances = ({ eth, reth, rpl }) => (
-  <div className="balances">
-    <h3 className="balances-title">Account Balances:</h3>
-    <p>{`${weiToEth(Number(eth))} ETH`}</p>
-    <p>{`${weiToEth(Number(reth))} rETH`}</p>
-    <p>{`${weiToEth(Number(rpl))} RPL`}</p>
+  <div className="container">
+    <h3 className="container-title">Account Balances:</h3>
+    <p>{`${fromWei(eth, 'ether')} ETH`}</p>
+    <p>{`${fromWei(reth, 'ether')} rETH`}</p>
+    <p>{`${fromWei(rpl, 'ether')} RPL`}</p>
   </div>
 );
 

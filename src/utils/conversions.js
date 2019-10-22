@@ -1,5 +1,9 @@
 import web3 from 'web3';
 
-const weiToEth = amount => web3.utils.fromWei(amount, 'ether');
+const fromWei = (amount, toUnit) => {
+  const converted = amount && typeof amount === 'string' ? web3.utils.fromWei(amount, toUnit) : 0;
 
-export default weiToEth;
+  return converted;
+};
+
+export default fromWei;
