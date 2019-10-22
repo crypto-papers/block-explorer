@@ -1,3 +1,5 @@
-export const weiToEth = amount => amount / 10 ** 18;
+import web3 from 'web3';
 
-export const gweiToEth = amount => amount / 10 ** 9;
+const weiToEth = amount => web3.utils.fromWei(amount, 'ether');
+
+export default weiToEth;
