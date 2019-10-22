@@ -1,7 +1,9 @@
+@import '../../style/colors.scss';
+
 header {
   align-items: center;
-  background: #053782;
-  background: linear-gradient(27deg, #053782, #1d88e0);
+  background: $darkBlue;
+  background: $gradientDarkLightBlue;
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
@@ -9,5 +11,14 @@ header {
 }
 
 .site-title {
-  color: #ffffff;
+  color: $white;
+}
+
+.nav-link {
+  color: $white;
+  text-decoration: none;
+
+  &:not(:first-of-type) {
+    margin-left: 1.5rem;
+  }
 }

@@ -7,9 +7,15 @@ const Header = () => (
   <header>
     <h1 className="site-title">Block Explorer</h1>
     <nav>
-      <Link to="/">Home</Link>
-      <Link to="/block">Block</Link>
-      <Link to="/address">Search by Address</Link>
+      <Link className="nav-link" to="/">
+        Home
+      </Link>
+      <Link className="nav-link" to="/block">
+        Block
+      </Link>
+      <Link className="nav-link" to="/address">
+        Search by Address
+      </Link>
     </nav>
   </header>
 );

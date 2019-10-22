@@ -8,19 +8,19 @@ module.exports = (env, arvg) => {
     devtool: arvg.mode === 'production' ? 'source-map' : 'eval',
     entry: paths.appIndex,
     module: {
-      rules: [rules.css(arvg.mode), rules.html, rules.js]
+      rules: [rules.css(arvg.mode), rules.html, rules.js],
     },
     output: {
-      path: paths.appDist
+      path: paths.appDist,
     },
     plugins: [
       new HtmlWebpackPlugin({
-        favicon: `${paths.appStatic}/favicon.svg`,
+        favicon: `${paths.appStatic}/favicon.ico`,
         template: paths.appHtml,
       }),
     ],
     resolve: {
       extensions: ['*', '.js', '.jsx'],
     },
-  }
-}
+  };
+};

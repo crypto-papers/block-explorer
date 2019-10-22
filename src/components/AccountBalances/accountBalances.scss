@@ -1,15 +1,17 @@
+@import '../../style/colors.scss';
+
 .balances {
-  border: 1px solid rgba(224, 224, 224, 0.5);
+  border: $borderLightGrey;
   border-radius: 3px;
-  box-shadow: 2px 1px 3px 2px rgba(224, 224, 224, 0.5);
+  box-shadow: $boxShadowGrey;
   padding: 1rem;
 
   &-title {
-    background: #053782;
-    background: linear-gradient(27deg, #053782, #1d88e0);
+    background: $darkBlue;
+    background: $gradientDarkLightBlue;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-    color: #ffffff;
+    color: $white;
     margin: -1rem -1rem 0 -1rem;
     padding: 1rem 1rem 0.5rem 1rem;
   }
