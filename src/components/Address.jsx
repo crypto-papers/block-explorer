@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import React, { Fragment, useState } from 'react';
 import Web3 from 'web3';
 
 import AccountBalances from './AccountBalances/AccountBalances';
+import SearchBar from './SearchBar/SearchBar';
 import { RethToken, RplToken } from '../utils/addresses';
+
+import '../style/globals.scss';
 
 const Address = () => {
   const [address, setAddress] = useState(null);
@@ -30,16 +33,14 @@ const Address = () => {
   };
 
   return (
-    <div>
-      <label htmlFor="address-search">
-        Search for Address:
-        <input id="address-search" type="text" onChange={e => setAddress(e.target.value)} />
-      </label>
-      <button type="submit" onClick={() => getAddressInfo(address)}>
-        Search
-      </button>
+    <Fragment>
+      <SearchBar
+        changeHandler={setAddress}
+        clickHandler={{ cb: getAddressInfo, params: [address] }}
+        label="Search for Address:"
+      />
       {showBalances && <AccountBalances eth={ethBalance} reth={rethBalance} rpl={rplBalance} />}
-    </div>
+    </Fragment>
   );
 };
 

@@ -1,0 +1,26 @@
+@import '../../style/colors.scss';
+
+.search {
+  &-bar {
+    display: flex;
+  }
+
+  &-button {
+    background-color: $darkBlue;
+    border: $borderDarkBlue;
+    color: $white;
+    font-weight: 500;
+    margin-top: 0;
+  }
+
+  &-input {
+    border: $borderLightGrey;
+    flex-grow: 1;
+    margin-left: 1rem;
+    margin-top: 0;
+  }
+
+  &-label {
+    font-weight: 600;
+  }
+}
