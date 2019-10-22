@@ -1,11 +1,11 @@
 import React, { Fragment, useState } from 'react';
 import Web3 from 'web3';
 
-import AccountBalances from './AccountBalances/AccountBalances';
-import SearchBar from './SearchBar/SearchBar';
-import { RethToken, RplToken } from '../utils/addresses';
+import AccountBalances from '../AccountBalances/AccountBalances';
+import SearchBar from '../SearchBar/SearchBar';
+import { RethToken, RplToken } from '../../utils/addresses';
 
-import '../style/globals.scss';
+import '../../style/globals.scss';
 
 const Address = () => {
   const [address, setAddress] = useState(null);

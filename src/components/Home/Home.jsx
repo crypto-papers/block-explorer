@@ -1,5 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import Web3 from 'web3';
+
+import BlockGrid from '../BlockGrid/BlockGrid';
+
+import '../../style/globals.scss';
 
 const Home = () => {
   // Const [blockIds, setBlockIds] = useState([]);
@@ -16,7 +20,12 @@ const Home = () => {
     getBlockNo();
   });
 
-  return <h2>The current block is: {currBlock}</h2>;
+  return (
+    <Fragment>
+      <h2>The current block is: {currBlock}</h2>
+      <BlockGrid />
+    </Fragment>
+  );
 };
 
 Home.displayName = 'Home';

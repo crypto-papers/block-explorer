@@ -8,7 +8,9 @@ import './layout.scss';
 const Layout = ({ children }) => (
   <Fragment>
     <Header />
-    <div className="content">{children}</div>
+    <div className="main">
+      <div className="content-container">{children}</div>
+    </div>
   </Fragment>
 );
 

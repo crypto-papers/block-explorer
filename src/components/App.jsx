@@ -2,9 +2,9 @@ import React from 'react';
 import { Router } from '@reach/router';
 
 import Address from './Address';
-import Block from './Block';
+import Block from './Block/Block';
 import Layout from './Layout/Layout';
-import Home from './Home';
+import Home from './Home/Home';
 
 import '../style/app.scss';
 
