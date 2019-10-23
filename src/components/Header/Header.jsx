@@ -11,10 +11,10 @@ const Header = () => (
         Home
       </Link>
       <Link className="nav-link" to="/block">
-        Block
+        Blocks
       </Link>
       <Link className="nav-link" to="/address">
-        Search by Address
+        Addresses
       </Link>
     </nav>
   </header>
