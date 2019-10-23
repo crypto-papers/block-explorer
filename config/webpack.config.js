@@ -5,6 +5,9 @@ const rules = require('./rules');
 
 module.exports = (env, arvg) => {
   return {
+    devServer: {
+      historyApiFallback: true,
+    },
     devtool: arvg.mode === 'production' ? 'source-map' : 'eval',
     entry: paths.appIndex,
     module: {
@@ -12,6 +15,7 @@ module.exports = (env, arvg) => {
     },
     output: {
       path: paths.appDist,
+      publicPath: '/',
     },
     plugins: [
       new HtmlWebpackPlugin({
