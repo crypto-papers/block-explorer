@@ -6,7 +6,11 @@
   "prettier": "@cryptopapers/prettier-config",
   "scripts": {
     "build": "webpack --config ./config/webpack.config.js --mode production",
-    "dev": "webpack-dev-server --config ./config/webpack.config.js --mode development"
+    "dev": "webpack-dev-server --config ./config/webpack.config.js --mode development",
+    "abi": "npm run abi:gen && npm run abi:artifactor",
+    "abi:gen": "solcjs src/contracts/RocketStorageInterface.sol -o src/contracts/abi --abi",
+    "abi:artifactor": "node src/contracts/artifactor",
+    "help": "solcjs --help"
   },
   "browserslist": [
     "last 1 Chrome version"
@@ -15,6 +19,7 @@
     "@reach/router": "^1.2.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
+    "rocketpool": "github:rocket-pool/rocketpool-js",
     "web3": "^1.2.1"
   },
   "devDependencies": {
@@ -24,6 +29,7 @@
     "@babel/preset-react": "^7.6.3",
     "@cryptopapers/eslint-config": "^0.1.0",
     "@cryptopapers/prettier-config": "^1.0.0",
+    "@truffle/artifactor": "^4.0.35",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.0",
@@ -35,6 +41,7 @@
     "prettier": "^1.18.2",
     "prop-types": "^15.7.2",
     "sass-loader": "^8.0.0",
+    "solc": "^0.5.12",
     "style-loader": "^1.0.0",
     "webpack": "^4.41.1",
     "webpack-cli": "^3.3.9",
