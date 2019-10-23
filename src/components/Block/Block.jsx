@@ -6,7 +6,7 @@ import '../../style/globals.scss';
 const Block = ({ blockNum }) => {
   return (
     <div className="container">
-      <h3 className="container-title">{`Blocks ${blockNum}`}</h3>
+      <h3 className="container-title">{`Block #${blockNum}`}</h3>
     </div>
   );
 };

@@ -1,4 +1,67 @@
 @import './colors.scss';
+@import './typography.scss';
+
+body,
+button {
+  font-family: $baseFont;
+  font-size: $baseFontSize;
+  line-height: 1.4;
+  margin: 0;
+}
+
+a {
+  color: $midnightBlue;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+p {
+  color: $black;
+}
+
+h1 {
+  color: $black;
+  font-family: $primaryHeaderFont;
+  font-size: $xLargeFont;
+}
+
+h2 {
+  color: $black;
+  font-family: $primaryHeaderFont;
+  font-size: $largeFont;
+}
+
+h3 {
+  color: $black;
+  font-family: $secondaryHeaderFont;
+  font-size: $mediumLargeFont;
+}
+
+h4 {
+  color: $black;
+  font-family: $secondaryHeaderFont;
+  font-size: $mediumFont;
+}
+
+h5 {
+  color: $black;
+  font-family: $secondaryHeaderFont;
+  font-size: $baseFontSize;
+}
+
+h6 {
+  color: $black;
+  font-family: $secondaryHeaderFont;
+  font-size: $smallFont;
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-family: $codeSnippetFont;
+  font-size: 1rem;
+}
 
 .container {
   border: $borderLightGrey;

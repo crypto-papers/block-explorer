@@ -2,22 +2,31 @@
 
 .search {
   &-bar {
+    background-color: $lightGrey50;
     display: flex;
+    line-height: 1.6;
   }
 
   &-button {
     background-color: $darkBlue;
     border: $borderDarkBlue;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
     color: $white;
     font-weight: 500;
     margin-top: 0;
+    padding: 0 20px;
   }
 
   &-input {
     border: $borderLightGrey;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    box-shadow: $boxShadowGreyInset;
     flex-grow: 1;
     margin-left: 1rem;
     margin-top: 0;
+    padding: 3px 10px;
   }
 
   &-label {

@@ -1,6 +1,7 @@
 // Colors
 $darkBlue: rgba(5, 55, 130, 1); // #053782
 $lightBlue: rgba(29, 136, 224, 1); // #1d88e0
+$midnightBlue: rgba(17, 1, 59, 1); // #11013b
 
 // Monochromes
 $black: rgba(28, 29, 35, 1); // #1c1d23
@@ -22,4 +23,5 @@ $borderLightGrey: 1px solid $lightGrey;
 $borderDarkBlue: 1px solid $darkBlue;
 $borderLightBlueThick: 0.4rem solid $lightBlue;
 $boxShadowGrey: 2px 1px 3px 2px $lightGrey50;
+$boxShadowGreyInset: inset 1px 0 4px $black25;
 $boxShadowBlack: 2px 1px 3px 2px $black25;

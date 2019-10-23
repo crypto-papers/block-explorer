@@ -1,7 +1,7 @@
 import React from 'react';
 import { Router } from '@reach/router';
 
-import Address from './Address';
+import Address from './Address/Address';
 import Block from './Block/Block';
 import Layout from './Layout/Layout';
 import Home from './Home/Home';
