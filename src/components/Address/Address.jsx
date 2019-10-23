@@ -1,9 +1,9 @@
 import React, { Fragment, useState } from 'react';
-import Web3 from 'web3';
 
 import AccountBalances from '../AccountBalances/AccountBalances';
 import SearchBar from '../SearchBar/SearchBar';
 import { RethToken, RplToken } from '../../utils/addresses';
+import provider from '../../utils/web3';
 
 import '../../style/globals.scss';
 
@@ -14,10 +14,8 @@ const Address = () => {
   const [rplBalance, setRplBalance] = useState(null);
   const [showBalances, setShowBalances] = useState(null);
 
-  const web3 = new Web3(new Web3.providers.HttpProvider('http://gateway.rocketpool.net:8888'));
-
   const getAddressInfo = async add => {
-    await web3.eth.getBalance(add).then(setEthBalance);
+    await provider.eth.getBalance(add).then(setEthBalance);
 
     await RethToken.methods
       .balanceOf(add)
@@ -37,7 +35,7 @@ const Address = () => {
       <SearchBar
         changeHandler={setAddress}
         clickHandler={{ cb: getAddressInfo, params: [address] }}
-        label="Search for Address:"
+        label="Search by Address:"
       />
       {showBalances && <AccountBalances eth={ethBalance} reth={rethBalance} rpl={rplBalance} />}
     </Fragment>
