@@ -1,0 +1,6 @@
+@import '../../style/colors.scss';
+
+.grid > p:not(:last-of-type) {
+  border-bottom: $borderLightGrey;
+  padding: 0.5rem 0;
+}
